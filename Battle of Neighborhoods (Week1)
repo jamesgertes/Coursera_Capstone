@@ -1,2 +1,19 @@
 # Coursera Capstone Project
 
+### The Battle of the Neighborhoods (Week 1)
+James Gertes - Part 1: Introduction and Data Sections
+import numpy as np # library to handle data in a vectorized manner
+import time
+import pandas as pd # library for data analsysis
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', None)
+
+import json # library to handle JSON files
+import requests # library to handle requests
+from pandas.io.json import json_normalize # tranform JSON file into a pandas dataframe
+
+from geopy.geocoders import Nominatim # convert an address into latitude and longitude values
+!conda install -c conda-forge folium=0.5.0 --yes # uncomment this line if you haven't completed the Foursquare API lab
+import folium # map rendering library
+
+print('Libraries imported.')
